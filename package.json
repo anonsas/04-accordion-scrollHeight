@@ -1,0 +1,17 @@
+{
+  "name": "03-accordion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dead-server --port=3000 --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Igor",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "dead-server": "^1.0.6"
+  }
+}

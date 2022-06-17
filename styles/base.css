@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root {
+  --font-base: 'DM Sans', sans-serif;
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-base);
+  font-weight: 400;
+  line-height: 1.6;
+
+  font-size: 1.6rem;
+  min-height: 100vh;
+
+  color: #000;
+  background: linear-gradient(to top, #6564ea, #b067eb);
+  margin: 0 2rem;
+  position: relative;
+}
+
+@keyframes slide-down {
+  0% {
+    padding: 1rem;
+    max-height: max-content;
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+  100% {
+    padding: 1rem;
+    visibility: visible;
+    max-height: max-content;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    padding: 1rem;
+    visibility: visible;
+    max-height: max-content;
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+    padding: 0 1rem;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes rotate-up {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate-down {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
